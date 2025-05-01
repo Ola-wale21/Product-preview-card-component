@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+.container {
+    max-width: 375px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+.first-half img {
+    width: 100%;
+    border-radius:10px 10px 0 0 ;
+}
+.second-half {
+    padding: 25px;
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+p.head {
+    margin-top: 0;
+}
+.second-half h2 {
+    font-family: 'Fraunces';
+    color: hsl(212, 21%, 14%);
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1;
+
+}
+p.text {
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 20px 10px 20px 0;
+    font-weight: 500;
+}
+span.main-price {
+    font-family: 'Fraunces';
+    font-size: 2.5em;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+del.secondary-price {
+    position: relative;
+    bottom: 7px;
+    left: 15px;
+}
+button {
+    background-color: hsl(158, 36%, 37%);
+    font-size: 15px;
+    max-width: 320px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+}
+button img {
+    position: relative;
+    right: 10px;
+    top: 3px;
+}
+@media(min-width: 600px){
+    body {
+        height: 100vh;
+        gap: 30px;
+    }
+    .container{
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+       max-width: 600px;
+       height: 450px;
+       border-radius:10px ;
+    }
+    .first-half img {
+        border-radius: 10px 0 0 10px;
+        height: 450px;
+    }
+    .second-half{
+        padding: 30px;
+    }
+    p.text {
+        margin: 20px 0;
+    }
+}
